@@ -1,0 +1,5 @@
+{"chunk_id":"FSC-001-c1","source_id":"FSC-001","section":"개인정보 유출을 빙자한 주요 금융사기 수법","text":"신용점수 상향, 거래실적 확보, 보증료 등을 명목으로 대출 실행 전 금전 입 금 요구","signal_tags":["ADVANCE_PAYMENT"],"text_kind":"short_original_quote"}
+{"chunk_id":"FSC-002-c1","source_id":"FSC-002","section":"주식 투자 시 유의사항","text":"유사투자자문업자의 원금이나 고수익을 보장하는 허위·과장 광고에 속지 않도록 주의","signal_tags":["GUARANTEED_RETURN"],"text_kind":"short_original_quote"}
+{"chunk_id":"KISA-002-c1","source_id":"KISA-002","section":"스미싱 문자 예방 방법","text":"휴대폰번호, 아이디, 비밀번호 등 개인정보는 신뢰된 사이트에만 입력하고 인증번호의 경우 모바일 결제로 연계될 수 있으므로 한 번 더 확인","signal_tags":["CREDENTIAL_REQUEST","LINK_OR_INFO_REQUEST"],"text_kind":"short_original_quote"}
+{"chunk_id":"FSS-001-c1","source_id":"FSS-001","section":"소비자 유의사항 및 대응요령","text":"링크를 통해 단체 채팅방 등 참여 및 주식거래 앱 설치를 유도하는 업체와는 어떤 금융거래도 하지 마세요!","signal_tags":["EXTERNAL_APP"],"required_context_terms":["주식","리딩방","투자"],"text_kind":"short_original_quote"}
+{"chunk_id":"FIU-001-c1","source_id":"FIU-001","section":"팀미션사기 사기수법","text":"수익을 인출 하려면 수수료 등이 필요 하다는 방식으로 피해자를 기망 하는 것이 특징이다.","signal_tags":["WITHDRAWAL_PREPAYMENT","ADVANCE_PAYMENT"],"text_kind":"short_original_quote"}

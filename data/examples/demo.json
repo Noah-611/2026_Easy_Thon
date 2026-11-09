@@ -1,0 +1,54 @@
+[
+  {
+    "id": "phishing", "title": "인증번호 요구", "description": "기관을 내세우며 인증정보를 요구하는 가상 문자",
+    "input_mode": "single_message",
+    "messages": [{"id": "m1", "speaker": "발신자", "text": "[가상 금융기관 보안센터] 계좌를 보호하려면 문자로 받은 인증번호와 인터넷뱅킹 비밀번호를 상담원에게 알려주세요."}],
+    "expected_status": "suspicious_signals", "expected_tags": ["CREDENTIAL_REQUEST"],
+    "rationale": "기관명의 진위는 알 수 없지만 실제 인증번호·비밀번호 제공 요구가 있다."
+  },
+  {
+    "id": "loan", "title": "대출 전 보증료", "description": "대출을 조건으로 선입금과 외부 설치파일을 요구하는 가상 상담",
+    "input_mode": "conversation",
+    "messages": [
+      {"id": "m1", "speaker": "고객", "text": "대출 신청 조건을 알고 싶어요."},
+      {"id": "m2", "speaker": "상담원", "text": "대출 실행 전에 보증료 30만 원을 먼저 입금해 주세요. 심사 앱은 보내드린 APK 파일을 설치하면 됩니다."}
+    ],
+    "expected_status": "suspicious_signals", "expected_tags": ["ADVANCE_PAYMENT", "EXTERNAL_APP"],
+    "rationale": "대출 전 보증료 선납과 APK 설치를 실제로 요구한다."
+  },
+  {
+    "id": "investment", "title": "리딩방 출금 상담", "description": "수익 보장 뒤 출금을 조건으로 추가 입금을 요구하는 가상 대화",
+    "input_mode": "conversation",
+    "messages": [
+      {"id": "m1", "speaker": "운영자", "text": "이 투자 상품은 원금과 월 수익 20%를 보장합니다."},
+      {"id": "m2", "speaker": "참여자", "text": "투자금을 출금하고 싶어요."},
+      {"id": "m3", "speaker": "운영자", "text": "출금하려면 보증금 20만 원을 먼저 보내주세요. 오늘 안에 입금해야 처리됩니다."}
+    ],
+    "expected_status": "suspicious_signals", "expected_tags": ["GUARANTEED_RETURN", "WITHDRAWAL_PREPAYMENT"],
+    "rationale": "보장 주장과 출금 전 추가 납부가 관찰된다. 실제 투자·입금 여부는 추정하지 않는다."
+  },
+  {
+    "id": "sidejob", "title": "부업 수익 전 충전", "description": "보상을 받기 전에 금액 충전을 요구하는 가상 안내",
+    "input_mode": "single_message",
+    "messages": [{"id": "m1", "speaker": "담당자", "text": "리뷰 부업 수익을 받으려면 먼저 10만 원을 충전해 주세요. 충전을 완료해야 보상을 지급할 수 있어요."}],
+    "expected_status": "suspicious_signals", "expected_tags": ["ADVANCE_PAYMENT"],
+    "rationale": "보상 지급의 조건으로 선입금을 요구한다."
+  },
+  {
+    "id": "normal", "title": "일상적인 정산", "description": "친구 사이의 정상적인 식사비 정산을 가정한 대화",
+    "input_mode": "conversation",
+    "messages": [
+      {"id": "m1", "speaker": "친구", "text": "어제 내가 결제한 저녁 식사비 중 네 몫 1만 5천 원 보내줘."},
+      {"id": "m2", "speaker": "나", "text": "응, 어제 영수증 확인했어. 고마워!"}
+    ],
+    "expected_status": "no_clear_signals", "expected_tags": [],
+    "rationale": "송금이라는 단어만으로 의심 판정을 하지 않는다. 발신자 신원은 텍스트만으로 보장할 수 없다."
+  },
+  {
+    "id": "prevention", "title": "사기 예방 안내", "description": "의심 표현을 설명하는 예방 문구를 구분하는 예시",
+    "input_mode": "single_message",
+    "messages": [{"id": "m1", "speaker": "교육 안내", "text": "출금 전에 보증금을 먼저 보내라는 연락을 조심하세요. 인증번호를 타인에게 알려주지 마세요. 정상적인 투자는 원금과 수익을 보장하지 않습니다."}],
+    "expected_status": "no_clear_signals", "expected_tags": [],
+    "rationale": "선입금·인증정보·보장 표현을 포함하지만 예방 안내와 부정 표현이다."
+  }
+]

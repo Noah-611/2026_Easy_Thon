@@ -1,0 +1,27 @@
+[
+  {
+    "source_id": "FSC-001", "title": "최근 금융권 개인정보 유출사고에 따른 보이스피싱·스미싱 등 피해에 주의하세요.",
+    "publisher": "금융위원회", "url": "https://www.fsc.go.kr/no010101/87882", "published_at": "2026-10-06", "checked_at": "2026-11-08",
+    "usage_notes": "웹 본문 직접 확인. 선입금 관련 짧은 구절만 출처와 함께 인용. 첨부파일·이미지·전문은 재배포하지 않음."
+  },
+  {
+    "source_id": "FSC-002", "title": "종목 추천? 고수익 보장? 리딩방 조심하세요!",
+    "publisher": "금융위원회 · 정책브리핑", "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148935062", "published_at": "2024-10-17", "checked_at": "2026-11-08",
+    "usage_notes": "본문 공공누리 제4유형 표기 확인. 비상업적 시연의 비평·설명을 위해 짧은 원문 구절을 그대로 인용하고 링크 제공. 원문 변경·이미지·전문 재배포 없음. 상업 배포 전 별도 권리 검토 필요."
+  },
+  {
+    "source_id": "KISA-002", "title": "정부기관 사칭, 사기 피해자 구제를 유도하는 피싱사이트 주의 권고",
+    "publisher": "한국인터넷진흥원", "url": "https://risc.kisa.or.kr/inform/secInfoDetail.do?pageIndex=5&scrtyInfoId=SCR_0000000000000054&searchCnterId=ACT_0000000000000001&searchCondition=&searchKeyword=", "published_at": "2025-07-21", "checked_at": "2026-11-08",
+    "usage_notes": "본문의 인증정보 관련 짧은 구절만 출처·링크와 함께 인용. 별도 재사용 라이선스 표기는 확인되지 않아 전문·이미지는 재배포하지 않음."
+  },
+  {
+    "source_id": "FSS-001", "title": "코스피 및 코스닥 열풍 속 불법 리딩방이 기승을 부리고 있으니 각별히 주의하시기 바랍니다.",
+    "publisher": "금융감독원 · KDI 경제교육·정보센터", "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=276312", "published_at": "2026-01-26", "checked_at": "2026-11-08",
+    "usage_notes": "KDI에 게재된 금융감독원 자료의 소비자 유의사항 중 짧은 문장만 그대로 인용. 첨부 PDF·전문 재배포 없음."
+  },
+  {
+    "source_id": "FIU-001", "title": "공무원의 달콤한 대리구매 유혹, 100% 신종피싱 사기입니다.",
+    "publisher": "금융위원회 금융정보분석원", "url": "https://www.fsc.go.kr/po010104/87493", "published_at": "2026-08-10", "checked_at": "2026-11-08",
+    "usage_notes": "본문 팀미션사기 부분의 인출 조건 설명을 짧게 인용. 제목의 100%는 원문 제목이며 우리 분석의 확률이 아님. 제도·법적 구제 효과는 분석에 사용하지 않음. 전문·이미지 재배포 없음."
+  }
+]

@@ -1,0 +1,19 @@
+# 용도: 비밀 설정, 의존성, 빌드 결과와 실험 산출물을 Git에서 제외한다.
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+node_modules/
+dist/
+coverage/
+artifacts/
+test-results/
+playwright-report/
+*:Zone.Identifier
+.DS_Store
+*.tsbuildinfo

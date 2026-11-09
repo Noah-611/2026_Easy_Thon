@@ -1,0 +1,27 @@
+# 용도: Python 의존성과 개발 도구 및 테스트 설정을 정의한다.
+[project]
+name = "scamcheck"
+version = "0.1.0"
+description = "Evidence-first Korean phishing and scam text analyzer"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi>=0.115,<1",
+  "uvicorn>=0.30,<1",
+  "pydantic>=2.10,<3",
+  "pydantic-settings>=2.7,<3",
+  "httpx>=0.28,<1",
+  "scikit-learn>=1.5,<2",
+  "joblib>=1.4,<2",
+]
+
+[dependency-groups]
+dev = ["pytest>=8,<10", "pytest-asyncio>=0.25,<2", "httpx>=0.28,<1"]
+
+[tool.pytest.ini_options]
+testpaths = ["backend/tests"]
+pythonpath = ["."]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+
+[tool.uv]
+package = false
